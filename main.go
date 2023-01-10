@@ -31,10 +31,12 @@ func main() {
 	hashmap.Start()
 	interfaces.Start()
 	hashset.Start()
+	hashset.Start_Optimized()
 	mystrings.Start()
 	linkedlist.Start()
 	concurrency.Start()
-	queue.Start()	
+	queue.Start()
 	jsonmarshalunmarshal.Start()
 	restapi.Start() // Need to close the program, otherwise the control won't move forward to next parts, as the application is always running and listening to the given port
 }
+
