@@ -17,7 +17,8 @@ import (
 	concurrency "github.com/sraynitjsr/12_Concurrency"
 	queue "github.com/sraynitjsr/13_Queue"
 	jsonmarshalunmarshal "github.com/sraynitjsr/14_JSON_Marshal_UnMarshal"
-	restapi "github.com/sraynitjsr/15_Simple_REST_API"
+	sumbyroutine "github.com/sraynitjsr/15_Sum_Array_Using_Go_Routines"
+	restapi "github.com/sraynitjsr/16_Simple_REST_API"
 )
 
 func main() {
@@ -37,6 +38,6 @@ func main() {
 	concurrency.Start()
 	queue.Start()
 	jsonmarshalunmarshal.Start()
+	sumbyroutine.Start()
 	restapi.Start() // Need to close the program, otherwise the control won't move forward to next parts, as the application is always running and listening to the given port
 }
-
