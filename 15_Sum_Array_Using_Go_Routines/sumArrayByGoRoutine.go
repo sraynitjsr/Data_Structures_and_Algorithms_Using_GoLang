@@ -32,7 +32,7 @@ func Start() {
 	}
 
 	for i := 0; i < 3; i++ {
-		fmt.Println(<-resultsChan)
+		fmt.Println("Current Slice Sum => ", <-resultsChan)
 	}
 
 	close(slicesChan)
