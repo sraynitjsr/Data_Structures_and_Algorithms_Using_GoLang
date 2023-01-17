@@ -19,10 +19,10 @@ import (
 		queue "github.com/sraynitjsr/13_Queue"
 		jsonmarshalunmarshal "github.com/sraynitjsr/14_JSON_Marshal_UnMarshal"
 		sumbyroutine "github.com/sraynitjsr/15_Sum_Array_Using_Go_Routines"
-		restapi "github.com/sraynitjsr/16_Simple_REST_API"
 		even_odd "github.com/sraynitjsr/17_Print_Odd_Even_From_Two_Routines"
+		go_concurrency "github.com/sraynitjsr/18_Golang_Concurrency_Practice"
 	*/
-	go_concurrency "github.com/sraynitjsr/18_Golang_Concurrency_Practice"
+	restapi "github.com/sraynitjsr/16_Simple_REST_API"
 )
 
 func main() {
@@ -46,8 +46,8 @@ func main() {
 		queue.Start()
 		jsonmarshalunmarshal.Start()
 		sumbyroutine.Start()
-		restapi.Start()
 		even_odd.Start()
+		go_concurrency.Start()
 	*/
-	go_concurrency.Start()
+	restapi.Start()
 }
