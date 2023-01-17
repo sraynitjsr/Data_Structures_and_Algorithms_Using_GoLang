@@ -22,8 +22,9 @@ import (
 		restapi "github.com/sraynitjsr/16_Simple_REST_API"
 		even_odd "github.com/sraynitjsr/17_Print_Odd_Even_From_Two_Routines"
 		go_concurrency "github.com/sraynitjsr/18_Golang_Concurrency_Practice"
+		stack "github.com/sraynitjsr/19_Stack"
 	*/
-	stack "github.com/sraynitjsr/19_Stack"
+	bst "github.com/sraynitjsr/20_Binary_Search_Tree"
 )
 
 func main() {
@@ -50,6 +51,7 @@ func main() {
 		restapi.Start()
 		even_odd.Start()
 		go_concurrency.Start()
+		stack.Start()
 	*/
-	stack.Start()
+	bst.Start()
 }
