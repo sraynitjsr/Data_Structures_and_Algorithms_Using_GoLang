@@ -20,8 +20,9 @@ import (
 		jsonmarshalunmarshal "github.com/sraynitjsr/14_JSON_Marshal_UnMarshal"
 		sumbyroutine "github.com/sraynitjsr/15_Sum_Array_Using_Go_Routines"
 		restapi "github.com/sraynitjsr/16_Simple_REST_API"
+		even_odd "github.com/sraynitjsr/17_Print_Odd_Even_From_Two_Routines"
 	*/
-	even_odd "github.com/sraynitjsr/17_Print_Odd_Even_From_Two_Routines"
+	go_concurrency "github.com/sraynitjsr/18_Golang_Concurrency_Practice"
 )
 
 func main() {
@@ -46,6 +47,7 @@ func main() {
 		jsonmarshalunmarshal.Start()
 		sumbyroutine.Start()
 		restapi.Start()
+		even_odd.Start()
 	*/
-	even_odd.Start()
+	go_concurrency.Start()
 }
