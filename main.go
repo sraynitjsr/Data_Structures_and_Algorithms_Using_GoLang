@@ -23,8 +23,9 @@ import (
 		even_odd "github.com/sraynitjsr/17_Print_Odd_Even_From_Two_Routines"
 		go_concurrency "github.com/sraynitjsr/18_Golang_Concurrency_Practice"
 		stack "github.com/sraynitjsr/19_Stack"
+		bst "github.com/sraynitjsr/20_Binary_Search_Tree"
 	*/
-	bst "github.com/sraynitjsr/20_Binary_Search_Tree"
+	for_select_example "github.com/sraynitjsr/21_Print_Numbers_Alternetively_Using_Go_Routine"
 )
 
 func main() {
@@ -52,6 +53,7 @@ func main() {
 		even_odd.Start()
 		go_concurrency.Start()
 		stack.Start()
+		bst.Start()
 	*/
-	bst.Start()
+	for_select_example.Start()
 }
