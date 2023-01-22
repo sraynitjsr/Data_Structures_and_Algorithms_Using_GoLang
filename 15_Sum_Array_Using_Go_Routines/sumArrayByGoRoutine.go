@@ -22,14 +22,14 @@ func Start() {
 	myInputSlice = append(myInputSlice, []int{40, 50, 60})
 	myInputSlice = append(myInputSlice, []int{70, 80, 90})
 
-	slicesChan := make(chan []int, 10)
-	resultsChan := make(chan int, 10)
-
-	go worker(slicesChan, resultsChan)
+	slicesChan := make(chan []int, 3)
+	resultsChan := make(chan int, 3)
 
 	for _, newSlice := range myInputSlice {
 		slicesChan <- newSlice
 	}
+
+	go worker(slicesChan, resultsChan)
 
 	for i := 0; i < 3; i++ {
 		fmt.Println("Current Slice Sum => ", <-resultsChan)
