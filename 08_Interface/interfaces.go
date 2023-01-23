@@ -22,7 +22,7 @@ type MyInterface interface {
 	getHobby() string
 }
 
-func getHobby(myInterface MyInterface) string {
+func GetHobby(myInterface MyInterface) string {
 	return myInterface.getHobby()
 }
 
@@ -40,6 +40,6 @@ func Start() {
 	fmt.Println("\tWoman's Hobby", woman.getHobby())
 
 	fmt.Println("With Interface")
-	fmt.Print("\tMan's Hobby ", getHobby(&man))
-	fmt.Println("\tWoman's Hobby", getHobby(&woman))
+	fmt.Print("\tMan's Hobby ", GetHobby(&man))
+	fmt.Println("\tWoman's Hobby", GetHobby(&woman))
 }
