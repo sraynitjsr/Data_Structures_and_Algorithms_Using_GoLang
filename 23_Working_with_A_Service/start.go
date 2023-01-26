@@ -1,1 +1,5 @@
 package workingwithaservice
+
+func Start() {
+
+}
