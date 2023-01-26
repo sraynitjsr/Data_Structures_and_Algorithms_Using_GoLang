@@ -2,6 +2,8 @@ package workingwithaservice
 
 import (
 	"fmt"
+	"os"
+	"os/signal"
 	"time"
 )
 
@@ -19,4 +21,8 @@ func Start() {
 		fmt.Println("Current Data From Channel is =>", data)
 		time.Sleep(time.Second * 1)
 	}
+	interruptChannel := make(chan os.Signal, 1)
+	signal.Notify(interruptChannel)
+	s := <-interruptChannel
+	fmt.Println("Got Signal =>", s)
 }
