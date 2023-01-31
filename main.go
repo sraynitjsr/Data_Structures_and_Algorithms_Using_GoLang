@@ -20,14 +20,15 @@ import (
 		jsonmarshalunmarshal "github.com/sraynitjsr/14_JSON_Marshal_UnMarshal"
 		sumbyroutine "github.com/sraynitjsr/15_Sum_Array_Using_Go_Routines"
 		restapi "github.com/sraynitjsr/16_Simple_REST_API"
-		even_odd "github.com/sraynitjsr/17_Print_Odd_Even_From_Two_Routines"
+
 		go_concurrency "github.com/sraynitjsr/18_Golang_Concurrency_Practice"
 		stack "github.com/sraynitjsr/19_Stack"
 		bst "github.com/sraynitjsr/20_Binary_Search_Tree"
 		for_select_example "github.com/sraynitjsr/21_Print_Numbers_Alternetively_Using_Go_Routine"
 		done_design_pattern "github.com/sraynitjsr/22_Done_Concurrency_Design_Pattern_in_Golang"
 	*/
-	workingwithaservice "github.com/sraynitjsr/23_Working_with_A_Service"
+	// workingwithaservice "github.com/sraynitjsr/23_Working_with_A_Service"
+	even_odd "github.com/sraynitjsr/17_Print_Odd_Even_From_Two_Routines"
 )
 
 func main() {
@@ -52,12 +53,13 @@ func main() {
 		jsonmarshalunmarshal.Start()
 		sumbyroutine.Start()
 		restapi.Start()
-		even_odd.Start()
+
 		go_concurrency.Start()
 		stack.Start()
 		bst.Start()
 		for_select_example.Start()
 		done_design_pattern.Start()
 	*/
-	workingwithaservice.Start()
+	// workingwithaservice.Start()
+	even_odd.Start()
 }
