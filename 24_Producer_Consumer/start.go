@@ -1,31 +1,30 @@
-package main
+package producer_consumer
 
 import (
 	"fmt"
-	"math/rand"
 	"sync"
 	"time"
 )
 
 func producer(ch chan<- int, wg *sync.WaitGroup) {
 	defer wg.Done()
-	for i := 0; i < 10; i++ {
-		n := rand.Intn(100)
-		ch <- n
-		fmt.Println("Produced:", n)
+	for i := 0; i < 5; i++ {
+		ch <- i
+		fmt.Println("Produced:", i)
 		time.Sleep(time.Second)
 	}
 }
 
 func consumer(ch <-chan int, wg *sync.WaitGroup) {
 	defer wg.Done()
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 5; i++ {
 		n := <-ch
 		fmt.Println("Consumed:", n)
 	}
 }
 
-func main() {
+func Start() {
+	fmt.Println("Inside Producer Consumer")
 	var wg sync.WaitGroup
 	ch := make(chan int)
 

@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	producer_consumer "github.com/sraynitjsr/24_Producer_Consumer"
 )
 
 func main() {
@@ -34,4 +36,5 @@ func main() {
 			workingwithaservice.Start()
 		    even_odd.Start()
 	*/
+	producer_consumer.Start()
 }
