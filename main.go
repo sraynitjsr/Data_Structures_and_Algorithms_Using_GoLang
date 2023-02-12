@@ -15,14 +15,12 @@ import (
 	mystrings "github.com/sraynitjsr/10_Strings"
 	linkedlist "github.com/sraynitjsr/11_LinkedList"
 	queue "github.com/sraynitjsr/12_Queue"
-	jsonmarshalunmarshal "github.com/sraynitjsr/13_JSON_Marshal_UnMarshal"
-
-	// restapi "github.com/sraynitjsr/14_Simple_REST_API"
-
-	stack "github.com/sraynitjsr/15_Stack"
-	bst "github.com/sraynitjsr/16_Binary_Search_Tree"
-	concurrency "github.com/sraynitjsr/17_Golang_Concurrency"
-	svc "github.com/sraynitjsr/18_Working_With_A_Service"
+	stack "github.com/sraynitjsr/13_Stack"
+	jsonmarshalunmarshal "github.com/sraynitjsr/14_JSON_Marshal_UnMarshal"
+	bst "github.com/sraynitjsr/15_Binary_Search_Tree"
+	concurrency "github.com/sraynitjsr/16_Golang_Concurrency"
+	// restapi "github.com/sraynitjsr/17_Simple_REST_API"
+	// svc "github.com/sraynitjsr/18_Working_With_A_Service"
 )
 
 func main() {
@@ -41,9 +39,9 @@ func main() {
 	linkedlist.Start()
 	queue.Start()
 	jsonmarshalunmarshal.Start()
-	// restapi.Start()
 	stack.Start()
 	bst.Start()
 	concurrency.Start()
-	svc.Start()
+	// restapi.Start()
+	// svc.Start()
 }
