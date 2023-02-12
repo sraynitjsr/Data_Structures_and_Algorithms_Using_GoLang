@@ -57,3 +57,4 @@ func Start() {
 
 	fmt.Println("\nCurrent Set is", myHashSet.data)
 }
+

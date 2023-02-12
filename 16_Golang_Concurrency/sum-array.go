@@ -32,3 +32,4 @@ func sumArray() {
 	fmt.Println("First Part Sum =>", <-myFirstChannel)
 	fmt.Println("Second Part Sum =>", <-mySecondChannel)
 }
+

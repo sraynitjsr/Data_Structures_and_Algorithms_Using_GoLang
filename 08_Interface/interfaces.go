@@ -43,3 +43,4 @@ func Start() {
 	fmt.Print("\tMan's Hobby ", GetHobby(&man))
 	fmt.Println("\tWoman's Hobby", GetHobby(&woman))
 }
+

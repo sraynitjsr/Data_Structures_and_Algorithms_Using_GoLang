@@ -27,3 +27,4 @@ func marshal() {
 	byteArr, _ := json.MarshalIndent(book,"","  ")
 	fmt.Println(string(byteArr))
 }
+

@@ -27,3 +27,4 @@ func Start() {
 	str3 := "C_D"
 	fmt.Println(strings.Join([]string{str1, str2, str3}, "$$$$"))
 }
+

@@ -12,3 +12,4 @@ func Start() {
 	fmt.Println("")
 	producerConsumerAsync()
 }
+

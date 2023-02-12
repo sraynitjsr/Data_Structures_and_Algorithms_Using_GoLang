@@ -26,3 +26,4 @@ func producerConsumerAsync() {
 	go consumerAsync(dataChannel, waitChannel)
 	<-waitChannel
 }
+

@@ -28,3 +28,4 @@ func Start() {
 
 	fmt.Println(myInt, myFloatingNumber, myString)
 }
+

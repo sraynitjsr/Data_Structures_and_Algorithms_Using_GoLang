@@ -26,3 +26,4 @@ func Start() {
 	s := <-interruptChannel
 	fmt.Println("Got Signal =>", s)
 }
+

@@ -35,3 +35,4 @@ func producerConsumerSync() {
 	wg.Wait()
 	close(ch)
 }
+

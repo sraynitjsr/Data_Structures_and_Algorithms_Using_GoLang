@@ -30,3 +30,4 @@ func Start() {
 	my2DArray := [5]string{}
 	secondArray(my2DArray)
 }
+

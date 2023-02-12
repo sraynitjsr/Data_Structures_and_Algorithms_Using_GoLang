@@ -36,3 +36,4 @@ func oddEven() {
 	go sendOdd(myNumber, &wg, myDoneChannel)
 	wg.Wait()
 }
+
