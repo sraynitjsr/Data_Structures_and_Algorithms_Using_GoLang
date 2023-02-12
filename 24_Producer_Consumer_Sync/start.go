@@ -1,4 +1,4 @@
-package producer_consumer
+package producer_consumer_sync
 
 import (
 	"fmt"
@@ -24,7 +24,7 @@ func consumer(ch <-chan int, wg *sync.WaitGroup) {
 }
 
 func Start() {
-	fmt.Println("Inside Producer Consumer")
+	fmt.Println("Inside Synchronized Producer Consumer")
 	var wg sync.WaitGroup
 	ch := make(chan int)
 

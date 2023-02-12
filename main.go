@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	producer_consumer "github.com/sraynitjsr/24_Producer_Consumer_Async"
+	producer_consumer_sync "github.com/sraynitjsr/24_Producer_Consumer_Sync"
 )
 
 func main() {
@@ -36,5 +36,5 @@ func main() {
 			workingwithaservice.Start()
 		    even_odd.Start()
 	*/
-	producer_consumer.Start()
+	producer_consumer_sync.Start()
 }
