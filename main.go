@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	producer_consumer "github.com/sraynitjsr/24_Producer_Consumer"
+	producer_consumer "github.com/sraynitjsr/24_Producer_Consumer_Async"
 )
 
 func main() {
