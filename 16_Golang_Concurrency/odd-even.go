@@ -26,6 +26,7 @@ func sendEven(num int, wg *sync.WaitGroup, myDoneChannel chan bool) {
 }
 
 func oddEven() {
+	fmt.Println("Inside Print Odd Even From Two Routines Alternatively Module")
 	var wg sync.WaitGroup
 	myNumber := 20
 	myDoneChannel := make(chan bool, 1)
