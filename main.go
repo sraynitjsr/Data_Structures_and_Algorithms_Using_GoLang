@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	producer_consumer_sync "github.com/sraynitjsr/24_Producer_Consumer_Sync"
+	producer_consumer_async "github.com/sraynitjsr/25_Producer_Consumer_Async"
 )
 
 func main() {
@@ -37,4 +38,5 @@ func main() {
 		    even_odd.Start()
 	*/
 	producer_consumer_sync.Start()
+	producer_consumer_async.Start()
 }
