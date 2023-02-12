@@ -1,0 +1,5 @@
+package golangconcurrency
+
+func Start() {
+
+}
