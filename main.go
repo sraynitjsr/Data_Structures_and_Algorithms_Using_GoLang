@@ -20,9 +20,8 @@ import (
 		bst "github.com/sraynitjsr/15_Binary_Search_Tree"
 		restapi "github.com/sraynitjsr/17_Simple_REST_API"
 		svc "github.com/sraynitjsr/18_Working_With_A_Service"
-	*/
-	concurrency "github.com/sraynitjsr/16_Golang_Concurrency"
-)
+		concurrency "github.com/sraynitjsr/16_Golang_Concurrency"
+	*/)
 
 func main() {
 	fmt.Println("Inside Main")
@@ -45,6 +44,6 @@ func main() {
 		bst.Start()
 		restapi.Start()
 		svc.Start()
+		concurrency.Start()
 	*/
-	concurrency.Start()
 }
