@@ -14,7 +14,7 @@ func (s *MyHashSet) add(val int) {
 }
 
 func (s *MyHashSet) remove(val int) {
-
+	delete(s.myMap, val)
 }
 
 func (s *MyHashSet) display() {
@@ -44,6 +44,11 @@ func Start_Optimized() {
 	fmt.Print("\nSecond Run => ")
 	myHashSet.display()
 
+	myHashSet.remove(60)
+	
+	fmt.Print("\nThird Run => ")
+	myHashSet.display()
+	
 	fmt.Println("")
 }
 
