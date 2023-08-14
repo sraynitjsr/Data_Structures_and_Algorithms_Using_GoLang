@@ -13,6 +13,10 @@ func (s *MyHashSet) add(val int) {
 	}
 }
 
+func (s *MyHashSet) remove(val int) {
+
+}
+
 func (s *MyHashSet) display() {
 	for value := range s.myMap {
 		fmt.Print(value, " ")
