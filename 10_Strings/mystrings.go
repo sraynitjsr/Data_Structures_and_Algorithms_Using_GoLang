@@ -28,4 +28,5 @@ func Start() {
 	fmt.Println(strings.Join([]string{str1, str2, str3}, "$$$$"))
 
 	fmt.Println(strings.Trim("¡¡¡Hello, Gophers!!!", "!¡"))
+	fmt.Println(strings.TrimLeft("¡¡¡Hello, Gophers!!!", "!¡"))
 }
