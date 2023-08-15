@@ -26,5 +26,6 @@ func Start() {
 	str2 := "B_C"
 	str3 := "C_D"
 	fmt.Println(strings.Join([]string{str1, str2, str3}, "$$$$"))
-}
 
+	fmt.Println(strings.Trim("¡¡¡Hello, Gophers!!!", "!¡"))
+}
