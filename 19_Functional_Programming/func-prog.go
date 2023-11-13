@@ -29,3 +29,7 @@ func Reduce(slice []int, reducer ReducerFunc, initial int) int {
    }
    return result
 }
+
+func Start() {
+	fmt.Println("Functional Programming in GoLang")
+}
