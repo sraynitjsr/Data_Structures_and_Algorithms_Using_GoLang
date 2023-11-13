@@ -2,6 +2,7 @@ package func_prog
 
 type MapperFunc func(int) int
 type PredicateFunc func(int) bool
+type ReducerFunc func(int, int) int
 
 func Map(slice []int, mapper MapperFunc) []int {
    result := make([]int, len(slice))
@@ -17,6 +18,14 @@ func Filter(slice []int, predicate PredicateFunc) []int {
       if predicate(v) {
          result = append(result, v)
       }
+   }
+   return result
+}
+
+func Reduce(slice []int, reducer ReducerFunc, initial int) int {
+   result := initial
+   for _, v := range slice {
+      result = reducer(result, v)
    }
    return result
 }
