@@ -16,6 +16,7 @@ import (
 	linkedlist "github.com/sraynitjsr/11_LinkedList"
 	queue "github.com/sraynitjsr/12_Queue"
 	stack "github.com/sraynitjsr/13_Stack"
+	func_prog "github.com/sraynitjsr/19_Functional_Programming"
 	jsonmarshalunmarshal "github.com/sraynitjsr/14_JSON_Marshal_UnMarshal"
 	bst "github.com/sraynitjsr/15_Binary_Search_Tree"
 	concurrency "github.com/sraynitjsr/16_Golang_Concurrency"
@@ -40,6 +41,7 @@ func main() {
 	queue.Start()
 	jsonmarshalunmarshal.Start()
 	stack.Start()
+	func_prog.Start()
 	bst.Start()
 	restapi.Start()
 	svc.Start()
