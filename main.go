@@ -22,6 +22,7 @@ import (
 	concurrency "github.com/sraynitjsr/16_Golang_Concurrency"
 	restapi "github.com/sraynitjsr/17_Simple_REST_API"
 	svc "github.com/sraynitjsr/18_Working_With_A_Service"
+	newstuff "github.com/sraynitjsr/20_New_Features"
 )
 
 func main() {
@@ -46,4 +47,5 @@ func main() {
 	restapi.Start()
 	svc.Start()
 	concurrency.Start()
+	newstuff.Start()
 }
