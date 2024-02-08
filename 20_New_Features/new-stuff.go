@@ -34,5 +34,24 @@ func Start() {
 	fmt.Println(mySlice)
 
 	mySlice = slices.Insert(mySlice, len(mySlice), "E", "F")
-	fmt.Println(mySlice)	
+	fmt.Println(mySlice)
+
+	deleteMethod()
+}
+
+func deleteMethod() {
+	m := map[string]int{
+		"A": 100,
+		"B": 200,
+		"C": 300,
+		"D": 400,
+		"E": 500,
+	}
+
+	fmt.Println("Original map =>", m)
+
+	maps.DeleteFunc(m, func(k string, v int) bool {
+		return v > 250
+	})
+	fmt.Println("Deleted keys for which values are more than 250 =>", m)
 }
