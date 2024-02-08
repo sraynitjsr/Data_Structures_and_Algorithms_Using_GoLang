@@ -54,4 +54,22 @@ func deleteMethod() {
 		return v > 250
 	})
 	fmt.Println("Deleted keys for which values are more than 250 =>", m)
+
+	// Another usage of maps.DeleteFunc()
+	mm := map[string]int{
+		"a": 2020,
+		"f": 8080,
+		"e": 3030,
+		"d": 6060,
+		"c": 4040,
+	}
+
+	fmt.Println("Original map =>", mm)
+
+	fmt.Println("ASCII values :-", "a =>", int('a'), " || f =>", int('f'), " || e =>", int('e'), " || d =>", int('d'), " || c =>", int('c'))
+
+	maps.DeleteFunc(mm, func(k string, v int) bool {
+		return int(k[0]) < 100
+	})
+	fmt.Println("Deleted keys for which ASCII values are less than 100 =>", mm)
 }
