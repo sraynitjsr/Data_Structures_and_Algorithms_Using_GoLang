@@ -4,9 +4,14 @@ import (
 	"fmt"
 	"maps"
 	"slices"
+	"strings"
 )
 
 func Start() {
+
+	myString := "a good   example"
+	fmt.Println("Trimmed String =>", strings.Fields(myString))
+
 	m1 := map[string]int{
 		"Age":  20,
 		"Roll": 100,
