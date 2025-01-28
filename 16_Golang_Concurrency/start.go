@@ -13,4 +13,6 @@ func Start() {
 	producerConsumerAsync()
 	fmt.Println("")
 	twoProducerTwoConsumers()
+	fmt.Println("")
+	oddEvenMutexBased()
 }
