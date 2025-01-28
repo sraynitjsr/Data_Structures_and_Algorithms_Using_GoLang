@@ -12,6 +12,10 @@ func Start() {
 	myString := "a good   example"
 	fmt.Println("Trimmed String =>", strings.Fields(myString))
 
+	mySlice1 := []int{1, 3, 5}
+	mySlice2 := []int{2, 4, 6}
+	fmt.Println(slices.Concat(mySlice1, mySlice2))
+
 	m1 := map[string]int{
 		"Age":  20,
 		"Roll": 100,
