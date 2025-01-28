@@ -11,5 +11,6 @@ func Start() {
 	producerConsumerSync()
 	fmt.Println("")
 	producerConsumerAsync()
+	fmt.Println("")
+	twoProducerTwoConsumers()
 }
-
