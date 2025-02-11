@@ -21,9 +21,34 @@ func usingRuneInGoLang() {
 	fmt.Println(mySlice)
 }
 
+func paniDemo() {
+	fmt.Println("Starting program...")
+
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Recovered from panic:", r)
+		}
+	}()
+
+	divide(10, 1)
+
+	fmt.Println("Program continues...")
+
+	divide(10, 0)
+}
+
+func divide(a, b int) int {
+	if b == 0 {
+		panic("division by zero")
+	}
+	return a / b
+}
+
 func Start() {
 	fmt.Println("Topics Missed Previously, Runes")
 	traverseAString()
 	fmt.Println()
 	usingRuneInGoLang()
+	fmt.Println()
+	paniDemo()
 }
