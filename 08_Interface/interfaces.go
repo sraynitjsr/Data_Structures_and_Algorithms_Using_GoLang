@@ -1,6 +1,10 @@
 package interfaces
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/sraynitjsr/08_Interface/embedding_example"
+)
 
 func Start() {
 	fmt.Println("Inside Interfaces")
@@ -9,5 +13,5 @@ func Start() {
 	SimpleInterface()
 
 	fmt.Println("\nEmbedding and Loose Coupling")
-	Embedding()
+	embedding_example.Embedding()
 }
