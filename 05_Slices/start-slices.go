@@ -38,4 +38,6 @@ func Start() {
 	basics()
 
 	tricky.TrickySlice1()
+
+	tricky.TrickySlice2()
 }
