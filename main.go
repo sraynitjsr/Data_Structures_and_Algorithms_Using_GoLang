@@ -7,7 +7,7 @@ import (
 	basics "github.com/sraynitjsr/02_Basic_Syntax_Go"
 	io "github.com/sraynitjsr/03_Input_Output"
 	arrays "github.com/sraynitjsr/04_Arrays"
-	slices "github.com/sraynitjsr/05_Slices"
+	myslices "github.com/sraynitjsr/05_Slices"
 	sorting "github.com/sraynitjsr/06_Sorting"
 	hashmap "github.com/sraynitjsr/07_HashMap"
 	interfaces "github.com/sraynitjsr/08_Interface"
@@ -32,7 +32,7 @@ func main() {
 	basics.Start()
 	io.Start()
 	arrays.Start()
-	slices.Start()
+	myslices.Start()
 	sorting.Start()
 	hashmap.Start()
 	interfaces.Start()
