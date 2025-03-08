@@ -1,3 +1,13 @@
+// Logic Used Here, No Mugging Up, All Logical Decision Making
+/*
+1. Lock Shared Resource
+2. Wait Until The Flag is Up
+3. Critical Section Execution To Be Done
+4. Update Flag For Other Routines To Know Change
+5. Inform Others That They Can Use Shared Resource Now
+6. Unlock Shared Resource
+*/
+
 package golangconcurrency
 
 import (
