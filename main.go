@@ -24,6 +24,7 @@ import (
 	func_prog "github.com/sraynitjsr/19_Functional_Programming"
 	newstuff "github.com/sraynitjsr/20_New_Features"
 	missedtopics "github.com/sraynitjsr/21_Missed_Topics"
+	chunk_based_processing "github.com/sraynitjsr/22_Chunk_Based_File_Processing"
 )
 
 func main() {
@@ -47,6 +48,7 @@ func main() {
 	bst.Start()
 	restapi.Start()
 	svc.Start()
+	chunk_based_processing.Start()
 	concurrency.Start()
 	newstuff.Start()
 	missedtopics.Start()
