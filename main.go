@@ -4,7 +4,8 @@ import (
 	"fmt"
 
 	helloworld "github.com/sraynitjsr/01_Hello_World"
-	basics "github.com/sraynitjsr/02_Basic_Syntax_Go"
+
+	/*basics "github.com/sraynitjsr/02_Basic_Syntax_Go"
 	io "github.com/sraynitjsr/03_Input_Output"
 	arrays "github.com/sraynitjsr/04_Arrays"
 	myslices "github.com/sraynitjsr/05_Slices"
@@ -25,14 +26,15 @@ import (
 	newstuff "github.com/sraynitjsr/20_New_Features"
 	missedtopics "github.com/sraynitjsr/21_Missed_Topics"
 	chunk_based_processing "github.com/sraynitjsr/22_Chunk_Based_File_Processing"
-	filelistener "github.com/sraynitjsr/23_File_Listener"
+	filelistener "github.com/sraynitjsr/23_File_Listener"*/
 )
 
 func main() {
-	filelistener.ListenToFile()
-	fmt.Println("Inside Main")
+	fmt.Println("Inside Main Method")
+
 	helloworld.Start()
-	basics.Start()
+
+	/*basics.Start()
 	io.Start()
 	arrays.Start()
 	myslices.Start()
@@ -54,5 +56,5 @@ func main() {
 	concurrency.Start()
 	newstuff.Start()
 	missedtopics.Start()
-
+	filelistener.ListenToFile()*/
 }

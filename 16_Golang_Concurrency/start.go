@@ -3,9 +3,16 @@ package golangconcurrency
 import "fmt"
 
 func Start() {
+
 	fmt.Println("")
 	oddEven()
+
 	fmt.Println("")
+	workerPool()
+
+	// Below Ones are Very Easy, First Two are Awesome Ones
+
+	/*fmt.Println("")
 	sumArray()
 	fmt.Println("")
 	producerConsumerSync()
@@ -16,5 +23,5 @@ func Start() {
 	fmt.Println("")
 	oddEvenMutexBased()
 	fmt.Println("")
-	blockingNatureUnbuffered()
+	blockingNatureUnbuffered()*/
 }
