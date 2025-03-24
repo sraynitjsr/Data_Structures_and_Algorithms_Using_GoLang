@@ -25,9 +25,11 @@ import (
 	newstuff "github.com/sraynitjsr/20_New_Features"
 	missedtopics "github.com/sraynitjsr/21_Missed_Topics"
 	chunk_based_processing "github.com/sraynitjsr/22_Chunk_Based_File_Processing"
+	filelistener "github.com/sraynitjsr/23_File_Listener"
 )
 
 func main() {
+	filelistener.ListenToFile()
 	fmt.Println("Inside Main")
 	helloworld.Start()
 	basics.Start()
@@ -52,4 +54,5 @@ func main() {
 	concurrency.Start()
 	newstuff.Start()
 	missedtopics.Start()
+
 }
