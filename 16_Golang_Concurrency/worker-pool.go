@@ -8,9 +8,10 @@ import (
 )
 
 var (
-	numberOfTasks    = 15
+	numberOfTasks    = 10
 	numberOfWorkers  = 3
 	workersWaitGroup sync.WaitGroup
+	resultsWaitGroup sync.WaitGroup
 	tasksChannel     = make(chan int, numberOfTasks)
 	resultsChannel   = make(chan string, numberOfTasks)
 )
@@ -37,10 +38,8 @@ func createTasksAndCloseTasksChannel() {
 	close(tasksChannel)
 }
 
-func waitForWorkersToEndAndCloseResultsChannelAndRead() {
-	workersWaitGroup.Wait()
-	close(resultsChannel)
-
+func readResultsContinuously() {
+	defer resultsWaitGroup.Done()
 	for data := range resultsChannel {
 		fmt.Println(data)
 	}
@@ -48,7 +47,16 @@ func waitForWorkersToEndAndCloseResultsChannelAndRead() {
 
 func workerPool() {
 	fmt.Println("GoLang Worker Pool Concept")
+
+	resultsWaitGroup.Add(1)
+	go readResultsContinuously()
+
 	createWorkers()
 	createTasksAndCloseTasksChannel()
-	waitForWorkersToEndAndCloseResultsChannelAndRead()
+
+	workersWaitGroup.Wait()
+
+	close(resultsChannel)
+
+	resultsWaitGroup.Wait()
 }
