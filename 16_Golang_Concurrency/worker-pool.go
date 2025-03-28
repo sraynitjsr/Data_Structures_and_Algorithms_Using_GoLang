@@ -51,9 +51,9 @@ func workerPool() {
 	resultsWaitGroup.Add(1)
 	go readResultsContinuously()
 
-	createWorkers()
-	createTasksAndCloseTasksChannel()
+	go createTasksAndCloseTasksChannel()
 
+	createWorkers()
 	workersWaitGroup.Wait()
 
 	close(resultsChannel)
