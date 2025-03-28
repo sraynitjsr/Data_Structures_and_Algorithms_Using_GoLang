@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	helloworld "github.com/sraynitjsr/01_Hello_World"
-	
+
 	/*basics "github.com/sraynitjsr/02_Basic_Syntax_Go"
 	io "github.com/sraynitjsr/03_Input_Output"
 	arrays "github.com/sraynitjsr/04_Arrays"
@@ -27,6 +27,7 @@ import (
 	missedtopics "github.com/sraynitjsr/21_Missed_Topics"
 	chunk_based_processing "github.com/sraynitjsr/22_Chunk_Based_File_Processing"
 	filelistener "github.com/sraynitjsr/23_File_Listener"*/
+	advancedawesome "github.com/sraynitjsr/24_Advanced_Awesome"
 )
 
 func main() {
@@ -57,4 +58,6 @@ func main() {
 	newstuff.Start()
 	missedtopics.Start()
 	filelistener.ListenToFile()*/
+
+	advancedawesome.LRUCacheStart()
 }
