@@ -1,3 +1,5 @@
+// Final Commit Done
+
 package jsonmarshalunmarshal
 
 import (
@@ -24,7 +26,6 @@ func marshal() {
 		Title:  "DSA",
 		Author: author,
 	}
-	byteArr, _ := json.MarshalIndent(book,"","  ")
+	byteArr, _ := json.MarshalIndent(book, "", "  ")
 	fmt.Println(string(byteArr))
 }
-

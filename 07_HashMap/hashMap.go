@@ -1,3 +1,5 @@
+// Final Commit Done
+
 package hashmap
 
 import "fmt"
@@ -26,4 +28,3 @@ func Start() {
 		fmt.Println("No data found at C")
 	}
 }
-

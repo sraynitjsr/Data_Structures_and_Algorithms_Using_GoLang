@@ -1,3 +1,5 @@
+// Final Commit Done
+
 package mystrings
 
 import (
@@ -27,7 +29,7 @@ func Start() {
 	str3 := "C_D"
 	fmt.Println(strings.Join([]string{str1, str2, str3}, "$$$$"))
 
-	fmt.Println(strings.Trim("¡¡¡Hello, Gophers!!!", "!¡"))	
+	fmt.Println(strings.Trim("¡¡¡Hello, Gophers!!!", "!¡"))
 	fmt.Print(strings.TrimRight("¡¡¡Hello, Gophers!!!", "!¡"))
 	fmt.Println(strings.TrimLeft("¡¡¡Hello, Gophers!!!", "!¡"))
 }

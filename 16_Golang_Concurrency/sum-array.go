@@ -1,3 +1,5 @@
+// Final Commit Done
+
 package golangconcurrency
 
 import "fmt"
@@ -32,4 +34,3 @@ func sumArray() {
 	fmt.Println("First Part Sum =>", <-myFirstChannel)
 	fmt.Println("Second Part Sum =>", <-mySecondChannel)
 }
-
